@@ -1,3 +1,13 @@
+/*------------------------------------------------------------------------------
+ Project      : IL2234 Project - Milestone 1 -> ALU 
+ File         : alu_tb.sv
+ Author       : Michael Kirchhofer, Yaowen Fan, Fredrik Kis
+ Description  : RTL implementation of the processor ALU (Milestone 1). Contains
+ ADD, SUB, AND, OR, XOR, INC, PASS_A and PASS_B functions. Exectutes the
+ operations set by the opcode input with the in_a and in_b inputs. The ALU puts
+ both the result of the operation, as well as a 3 - bit wide flag vector, which
+ signals if an overflow / underflow, negative or zero result occured.
+------------------------------------------------------------------------------*/
 module alu #(
   parameter int unsigned BW = 16 // bitwidth
   ) (

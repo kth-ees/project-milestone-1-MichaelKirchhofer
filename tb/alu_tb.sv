@@ -1,3 +1,9 @@
+/*------------------------------------------------------------------------------
+ Project      : IL2234 Project - Milestone 1 -> ALU 
+ File         : alu_tb.sv
+ Author       : Michael Kirchhofer, Yaowen Fan, Fredrik Kis
+ Description  : Testbench for the ALU for the processor project
+------------------------------------------------------------------------------*/
 module alu_tb;
 
   parameter BW = 16; // bitwidth
@@ -81,7 +87,7 @@ module alu_tb;
     // -------------------DEFAULT
     opcode = 4'b1111;
     #5ns;
-    
+
     // Complete your testbench code here
   end
 endmodule
